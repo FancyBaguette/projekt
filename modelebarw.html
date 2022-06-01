@@ -1,0 +1,213 @@
+<!-- Maciej Król 3BT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/modelebarw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <title>Maciej Król | Modele barw</title>
+</head>
+<body>
+    <header class="header">
+        <div> <h1>Maciej Król</h1> </div>
+
+        <div>
+            <nav class="navigation">
+                <ul>
+                    <li> <a href="index.html">Strona główna</a> </li>
+                    <li> <a href="daty.html">Daty</a> </li>
+                    <li> <a href="tablice.html">Tablice</a> </li>
+                    <li> <a href="#">Modele barw</a> </li>
+                    <li> <a href="galeria.html">Galeria</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Modele barw</h1>
+        </div>
+    </div>
+
+    <main>
+        <section class="main-section" id="section-1-modelebarw">
+            <h1>Rodzaje modeli barw w CSS</h1>
+            <div class="content-wrapper">
+                <article>
+                    <p>Kolory w CSS można określić nastepującymi modelami:</p>
+                    <ul>
+                        <li><a href="#hex"><strong>HEX</strong> (Kod szesnatkowy)</a></li>
+                        <li><a href="#hexalpha"><strong>HEX z przezroczystością</strong></a></li>
+                        <li><a href="#rgb"><strong>RGB</strong> (Red, green, blue)</a></li>
+                        <li><a href="#rgba"><strong>RGBA</strong> (Red, green, blue, alpha)</a></li>
+                        <li><a href="#hsl"><strong>HSL</strong> (Hue, saturation, lightness)</a></li>
+                        <li><a href="#hsla"><strong>HSLA</strong> (Hue, saturation, lightness, alpha)</a></li>
+                    </ul>
+                    <em style="margin-top: 1rem;">Kliknij na dany model aby przenieść się do jego opisu...</em><br><br>
+
+                    <a href="#random-boxes">Kliknij tutaj aby przejść do generatora losowo pokolorowanych kwadratów</a>
+
+                    <h3 id="hex">HEX</h3>
+                    <p>
+                        Kolor w kodzie szesnatkowy jest określany za pomocą<br> #RRGGBB, gdzie liczby całkowite szesnatkowe
+                        RR (red) GG (green) i BB (blue) określają składowe koloru.<br>
+                        Wszystkie wartości muszą zawierać się w przedziale od <strong>00</strong> do <strong>FF</strong><br>
+                    </p>
+
+                    <p>
+                        Np. #00ff00 da nam kolor zielony gdyż wartość koloru zielonego jest najwyższą możliwą<br> 
+                        a reszta wartości jest równa zeru. Poniżej znajduje się kilka innych przykładów.
+                    </p>
+
+                    <div class="codeblock">
+                        h1 { <span class="css-rule">color</span>: #ff0000 } <span class="css-comment">/* znacznik h1 otrzyma czerwony kolor tekstu */</span><br>
+                        h2 { <span class="css-rule">color</span>: #0000ff } <span class="css-comment">/* znacznik h2 otrzyma niebieski kolor tekstu */</span><br>
+                        h3 { <span class="css-rule">color</span>: #ffffff } <span class="css-comment">/* znacznik h3 otrzyma biały kolor tekstu */</span><br>
+                    </div>
+
+                    <p id="hexalpha"><strong>HEX z przezroczystością</strong></p>
+
+                    <p>
+                        Aby określić kolor w kodzie szesnatkowym z dodatkiem przezroczystości, do poznanego przed chwilą formatu<br>
+                        #RRGGBB dodajemy dwie kolejne cyfry których wartość musi zawierać się w przedziale od <strong>00</strong> do <strong>FF</strong>
+                    </p>
+
+                    <div class="codeblock">
+                        p { <span class="css-rule">color</span>: #ff0000<strong style="color: red">80</strong> } <span class="css-comment">/* znacznik p otrzyma przezroczysty czerwony kolor tekstu */</span>
+                    </div>
+
+
+                    <h3 id="rgb">RGB</h3>
+
+                    <p>
+                        Wartość koloru RGB określa się za pomocą funkcji rgb(), której składnia jest następująca:<br>
+                        <strong>rgb(red,green,blue)</strong><br>
+                    </p>
+
+                    <p>
+                        Każdy parametr (czerwony, zielony i niebieski) określa intensywność koloru i może być liczbą całkowitą<br> 
+                        z zakresu od 0 do 255 lub wartością procentową (od 0% do 100%).<br>
+                        Na przykład wartość rgb(0,0,255) jest renderowana jako kolor niebieski, ponieważ parametr niebieski<br> 
+                        jest ustawiony na najwyższą wartość (255), a pozostałe wartości są ustawione na 0.<br>
+                    </p>
+
+                    <p>
+                        Fakt że parametry mogą być liczbami całkowitymi z zakresu od 0 do 255 i wartościami procentowymi<br>
+                        oznacza że zapis <strong>rgb(0,0,255)</strong> i <strong>rgb(0%,0%,100%)</strong> da ten sam rezultat.
+                    </p>
+
+                    <div class="codeblock">
+                        .box { <span class="css-rule">color</span>: rgba(0,255,0) } <span class="css-comment">/* elementy z klasą box otrzymają zielony kolor tekstu */</span>
+                    </div>
+
+
+                    <h3 id="rgba">RGBA</h3>
+
+                    <p>
+                        RGBA to model RGB z dodatkiem przezroczystości. Aby dodać przezroczystość, zmieniamy składnię<br>
+                        <strong>rgb(red,green,blue)</strong> na <strong>rgba(red,green,blue,alpha)</strong>.<br>
+                        Alpha (kanał alfa) oznacza przezroczystość i wartość tego parametru może mieć wartość od 0 do 1<br>
+                    </p>
+
+                    <div class="codeblock">
+                        span { <span class="css-rule">background-color</span>: rgba(0,255,0,0.5) } <span class="css-comment">/* znacznik span otrzyma półprzezroczyste zielone tło */</span>
+                    </div>
+
+                    <p style="margin: 2rem 0; font-size: 1.125rem;">
+                        Poniżej znajduje się przedstawienie modelu kolorów RGBA.<br>
+                        Skrypt w języku Javascript generuje bloki w wybranym kolorze z wartościami
+                        przezroczystości od <strong>0.1</strong> do <strong>1</strong><br>
+                        Najedź na kwadrat aby zobaczyć jego wartość przezroczystości
+                    </p>
+
+                    <div class="boxes-1"></div>
+                    <div class="boxes-2"></div>
+                    <div class="boxes-3"></div>
+                    <div class="boxes-4"></div>
+
+                    <h3 id="hsl">HSL</h3>
+
+                    <p>
+                        HSL to skrót od słów hue (barwa), saturation (nasycenie) i lightness (jasność), który oznacza<br> 
+                        cylindryczną reprezentację kolorów we współrzędnych.
+                    </p>
+
+                    <p>
+                        Wartość koloru HSL określa się za pomocą funkcji hsl(), która ma następującą składnię:<br>
+                        <strong>hsl(hue, saturation, lightness)</strong>
+                    </p>
+
+                    <p>
+                        <strong>Barwa</strong> to stopień na kole kolorów (od 0 do 360) - 0 (lub 360) to kolor czerwony, 120 to kolor zielony, 240 to kolor niebieski.<br>
+                        <strong>Nasycenie</strong> to wartość procentowa; 0% oznacza odcień szarości, a 100% to pełny kolor.<br>
+                        <strong>Jasność</strong> to również wartość procentowa; 0% to czerń, a 100% to biel.
+                    </p>
+
+                    <div class="codeblock">
+                        .container { <span class="css-rule">background-color</span>: hsl(120,70%,50%) } <span class="css-comment">/* elementy z klasą box otrzymają lekko szarawo zielony kolor tła */</span>
+                    </div>
+
+                    <h3 id="hsla">HSLA</h3>
+
+                    <p>
+                        Wartości kolorów HSLA są rozszerzeniem wartości kolorów HSL o kanał alfa, który określa nieprzezroczystość obiektu.
+                    </p>
+
+                    <p>
+                        Wartość koloru HSLA określa się za pomocą funkcji hsla() o następującej składni:
+                        <strong>hsla(hue, saturation, lightness, alpha)</strong>
+                    </p>
+
+                    <p>
+                        Parametr alfa jest liczbą z przedziału od 0,0 (całkowicie przezroczysta) do 1,0 (całkowicie nieprzezroczysta).
+                    </p>
+
+                    <div class="codeblock">
+                        section { <span class="css-rule">background-color</span>: hsla(0,0%,0%,0.5) } <span class="css-comment">/* znacznik section otrzyma pół przezroczyste czarne tło */</span>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <section class="main-section" id="section-2-modelebarw">
+            <h1>Generator losowych kwadratów</h1>
+
+            <div class="content-wrapper">
+                <label for="rnd-box-amount-input">Ilość kwadratów</label>
+                <input type="number" name="rnd-box-amount-input" id="rnd-box-amount-input">
+                <div style="margin: 1rem 0">
+                    <label for="rnd-box-transparency-check">Losowa przezroczystość</label>
+                    <input type="checkbox" name="rnd-box-transparency-check" id="rnd-box-transparency-check">
+                </div>
+
+                <button class="generate-random-boxes">Wygeneruj</button>
+            </div>
+            
+            <div class="random-boxes-container"></div>
+        </section>
+    </main>
+
+    <footer class="main-section footer">
+        <div>
+            <h3>☎ Kontakt telefoniczny</h3>
+            <a href="tel:+48123456789">Zadzwoń</a>
+            <h3>📧 Kontakt mailowy</h3>
+            <a href="mailto:maciek@mail.com">Wyślij wiadomość</a>
+        </div>
+        <div>
+            <span id="current-date"></span>
+        </div>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/modelebarw.js"></script>
+</body>
+</html>

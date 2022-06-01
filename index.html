@@ -1,12 +1,113 @@
+<!-- Maciej Król 3BT -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <title>Maciej Król</title>
 </head>
 <body>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, explicabo?
+    <header class="header">
+        <div> <h1>Maciej Król</h1> </div>
+
+        <div>
+            <nav class="navigation">
+                <ul>
+                    <li> <a href="#">Strona główna</a> </li>
+                    <li> <a href="daty.html">Daty</a> </li>
+                    <li> <a href="tablice.html">Tablice</a> </li>
+                    <li> <a href="modelebarw.html">Modele barw</a> </li>
+                    <li> <a href="galeria.html">Galeria</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Witaj na mojej stronie</h1>
+        </div>
+    </div>
+
+    <main>
+        <section class="main-section" id="section-1">
+            <h1>Co tutaj znajdziesz?</h1>
+
+            <ul>
+                <li>Jak korzystać z dat w Javascript</li>
+                <li>Generator losowych liczb w tabeli</li>
+                <li>Wyjaśnienie modeli barw dostępnych w CSS</li>
+                <li>Galerię etapów powstawania strony</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="section-2">
+            <h1>Przejdź do danych zagadnień</h1>
+            
+            <div class="content-wrapper" style="gap: 2rem;">
+
+                <a class="feature-card" href="./daty.html">
+                    <div class="feature-card-img-wrapper">
+                        <img src="./src/img/kalendarz.svg" alt="Kartka z kalendarza">
+                    </div>
+                    <div>
+                        <h2>Daty</h2>
+                        <span>Oblicz różnicę dni pomiędzy podanymi przez ciebie datami</span>
+                    </div>
+                </a>
+
+                <a href="./tablice.html" class="feature-card">
+                    <div class="feature-card-img-wrapper">
+                        <img src="./src/img/tabela.svg" alt="Tabela">
+                    </div>
+                    <div>
+                        <h2>Tabele</h2>
+                        <span>Wygeneruj losowe liczby które pojawią się w tabeli</span>
+                    </div>
+                </a>
+
+                <a href="./modelebarw.html" class="feature-card">
+                    <div class="feature-card-img-wrapper">
+                        <img src="./src/img/modelebarw.svg" alt="Paleta na farby">
+                    </div>
+                    <div>
+                        <h2>Modele barw</h2>
+                        <span>Poznaj różne modele barw dostępne w CSS oraz wygeneruj losowo pokolorowane kwadraty</span>
+                    </div>
+                </a>
+
+                <a href="./galeria.html" class="feature-card">
+                    <div class="feature-card-img-wrapper">
+                        <img src="./src/img/galeria.svg" alt="Obrazek">
+                    </div>
+                    <div>
+                        <h2>Galeria</h2>
+                        <span>Zobacz etapy powstawania mojej strony</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-section footer">
+        <div>
+            <h3>☎ Kontakt telefoniczny</h3>
+            <a href="tel:+48123456789">Zadzwoń</a>
+            <h3>📧 Kontakt mailowy</h3>
+            <a href="mailto:maciek@mail.com">Wyślij wiadomość</a>
+        </div>
+        <div>
+            <span id="current-date"></span>
+        </div>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/animations.js"></script>
 </body>
 </html>

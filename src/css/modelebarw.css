@@ -1,0 +1,71 @@
+:root {
+    --clr-pastelpink: hsla(0, 71%, 85%, 1);
+    --clr-pastelorange: hsla(24, 100%, 88%, 1);
+    --clr-pastelyellow: hsla(43, 78%, 91%, 1);
+    --clr-pastelblue: hsla(202, 55%, 71%, 1);
+    --clr-pastelgreen: hsla(113, 78%, 91%, 1);
+    --clr-pastelcyan: hsla(182, 78%, 91%, 1);
+    --clr-pastelpurple: hsla(266, 78%, 91%, 1);
+    --clr-lightblack: hsla(0, 0%, 0%, .5);
+
+    --fnt-main: 'Karla', sans-serif;
+
+    --wg-thin: 300;
+    --wg-regular: 400;
+    --wg-medium: 500;
+    --wg-semibold: 600;
+    --wg-bold: 700;
+    --wg-extrabold: 800;
+}
+
+#section-1-modelebarw {
+    background-color: var(--clr-pastelcyan);
+}
+
+#section-2-modelebarw {
+    background-color: var(--clr-pastelblue);
+}
+
+.content-wrapper:nth-of-type(2) {
+    text-align: center;
+}
+
+article h3 {
+    margin: 2rem 0;
+    font-weight: var(--wg-extrabold);
+}
+
+article p {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+article a {
+    text-decoration: none;
+    color: black;
+}
+
+article a:hover {
+    color: hsla(266, 78%, 50%, 1)
+}
+
+.clr-box {
+    width: 100px;
+    height: 100px;
+}
+
+.boxes-1,
+.boxes-2,
+.boxes-3,
+.boxes-4,
+.boxes-5 {
+    display: flex;
+}
+
+.random-boxes-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75%;
+}
+

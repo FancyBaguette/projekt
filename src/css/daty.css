@@ -1,0 +1,50 @@
+:root {
+    --clr-pastelpink: hsla(0, 71%, 85%, 1);
+    --clr-pastelorange: hsla(24, 100%, 88%, 1);
+    --clr-pastelyellow: hsla(43, 78%, 91%, 1);
+    --clr-pastelblue: hsla(202, 55%, 71%, 1);
+    --clr-pastelgreen: hsla(113, 78%, 91%, 1);
+    --clr-pastelcyan: hsla(182, 78%, 91%, 1);
+    --clr-pastelpurple: hsla(266, 78%, 91%, 1);
+    --clr-lightblack: hsla(0, 0%, 0%, .5);
+
+    --fnt-main: 'Karla', sans-serif;
+
+    --wg-thin: 300;
+    --wg-regular: 400;
+    --wg-medium: 500;
+    --wg-semibold: 600;
+    --wg-bold: 700;
+    --wg-extrabold: 800;
+}
+
+#section-1-daty {
+    background-color: var(--clr-pastelcyan);
+}
+
+#section-2-daty {
+    background-color: var(--clr-pastelgreen);
+}
+
+.content-wrapper {
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.content-wrapper input,
+.content-wrapper select {
+    margin-bottom: 1rem;
+    background-color: white;
+    border: 1px solid var(--clr-lightblack);
+}
+
+.calculate-btn {
+    background-color: white;
+    border: 1px solid var(--clr-lightblack);
+    border-radius: 10px;
+}
+
+.calculated-time {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}

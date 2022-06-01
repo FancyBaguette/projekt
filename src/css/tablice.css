@@ -1,0 +1,64 @@
+:root {
+    --clr-pastelpink: hsla(0, 71%, 85%, 1);
+    --clr-pastelorange: hsla(24, 100%, 88%, 1);
+    --clr-pastelyellow: hsla(43, 78%, 91%, 1);
+    --clr-pastelblue: hsla(202, 55%, 71%, 1);
+    --clr-pastelgreen: hsla(113, 78%, 91%, 1);
+    --clr-pastelcyan: hsla(182, 78%, 91%, 1);
+    --clr-pastelpurple: hsla(266, 78%, 91%, 1);
+    --clr-lightblack: hsla(0, 0%, 0%, .5);
+
+    --fnt-main: 'Karla', sans-serif;
+
+    --wg-thin: 300;
+    --wg-regular: 400;
+    --wg-medium: 500;
+    --wg-semibold: 600;
+    --wg-bold: 700;
+    --wg-extrabold: 800;
+}
+
+.content-wrapper {
+    text-align: center;
+    align-items: center;
+}
+
+#section-1-tablice {
+    background-color: var(--clr-pastelpink);
+}
+
+#section-2-tablice {
+    background-color: var(--clr-pastelpurple);
+}
+
+.random-numbers-container,
+.sorted-numbers-container {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.rnd-number {
+    font-weight: var(--wg-extrabold);
+    font-size: 1.125rem;
+    background-color: white;
+    border-radius: 100%;
+    width: 100px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width:1025px) {
+    .random-numbers-container,
+    .sorted-numbers-container {
+        flex-wrap: wrap;
+    }
+
+    .rnd-number {
+        width: 70px;
+    }
+}

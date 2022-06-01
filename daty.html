@@ -1,0 +1,96 @@
+<!-- Maciej Król 3BT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/daty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <title>Maciej Król | Daty</title>
+</head>
+<body>
+    <header class="header">
+        <div> <h1>Maciej Król</h1> </div>
+
+        <div>
+            <nav class="navigation">
+                <ul>
+                    <li> <a href="index.html">Strona główna</a> </li>
+                    <li> <a href="#">Daty</a> </li>
+                    <li> <a href="tablice.html">Tablice</a> </li>
+                    <li> <a href="modelebarw.html">Modele barw</a> </li>
+                    <li> <a href="galeria.html">Galeria</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Daty</h1>
+        </div>
+    </div>
+
+    <main>
+        <section class="main-section" id="section-1-daty">
+            <h1>Oblicz ilość dni między dwoma datami</h1>
+
+            <div class="content-wrapper">
+                <label for="date1-input">Wprowadź pierwszą datę</label>
+                <input type="date" name="date1-input" id="date1-input">
+
+                <label for="date2-input">Wprowadź drugą datę</label>
+                <input type="date" name="date2-input" id="date2-input">
+
+                <button class="calculate-btn" id="calculate-btn-1">Oblicz</button>
+            </div>
+
+            <span class="calculated-time" id="calculated-time-difference"></span>
+        </section>
+
+        <section class="main-section" id="section-2-daty">
+            <h1>Oblicz ilość dni między datą a wybranym świętem</h1>
+            <span>Tutaj z jakiegoś powodu jak wybierze się te samą datę to nie działa jak należy :(</span>
+
+            <div class="content-wrapper">
+                <label for="dateHoliday-input">Wprowadź wybraną datę</label>
+                <input type="date" name="dateHoliday-input" id="dateHoliday-input">
+                <label for="selectedHoliday-input">Wybierz święto</label>
+                <select name="selectedHoliday-input" id="selectedHoliday-input">
+                    <option value="12/24/2022">Boże narodzenie 🎄</option>
+                    <option value="12/31/2022">Sylwester 🎆</option>
+                    <option value="04/09/2023">Wielkanoc (2023) 🥚</option>
+                    <option value="06/01/2022">Dzień dziecka 👶</option>
+                    <option value="05/01/2023">Święto pracy (2023) 👷‍♂️</option>
+                    <option value="10/11/2022">Dzień niepodległości ⬜🟥</option>
+                    <option value="03/18/2023">Moje 18 urodziny 😎</option>
+                </select>
+
+                <button class="calculate-btn" id="calculate-btn-2">Oblicz</button>
+            </div>
+
+            <span class="calculated-time" id="calculated-time-holiday"></span>
+        </section>
+    </main>
+
+    <footer class="main-section footer">
+        <div>
+            <h3>☎ Kontakt telefoniczny</h3>
+            <a href="tel:+48123456789">Zadzwoń</a>
+            <h3>📧 Kontakt mailowy</h3>
+            <a href="mailto:maciek@mail.com">Wyślij wiadomość</a>
+        </div>
+        <div>
+            <span id="current-date"></span>
+        </div>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/daty.js"></script>
+</body>
+</html>
