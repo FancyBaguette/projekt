@@ -83,6 +83,16 @@
                         p { <span class="css-rule">color</span>: #ff0000<strong style="color: red">80</strong> } <span class="css-comment">/* znacznik p otrzyma przezroczysty czerwony kolor tekstu */</span>
                     </div>
 
+                    <div class="test-wrapper">
+                        <h3>Spróbuj sam!</h3>
+                        <p>Wpisz własne wartości i zobacz wynik. Wygląd zmienia się w czasie rzeczywistym</p>
+
+                        <div class="codeblock">
+                            span { color: #<input type="text" id="hex-input" maxlength="8" placeholder="ff000080" oninput="hexTest()"> }
+                        </div>
+
+                        <p class="test-text" id="hex-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, totam.</p>
+                    </div>
 
                     <h3 id="rgb">RGB</h3>
 
@@ -132,6 +142,21 @@
                     <div class="boxes-3"></div>
                     <div class="boxes-4"></div>
 
+                    <div class="test-wrapper">
+                        <h3>Spróbuj sam!</h3>
+                        <p>Wpisz własne wartości i zobacz wynik. Wygląd zmienia się w czasie rzeczywistym</p>
+
+                        <div class="codeblock">
+                            span { color: rgba(  
+                                <input type="number" id="rgba-input-red" maxlength="3" placeholder="RED" oninput="rgbaTest()">, 
+                                <input type="number" id="rgba-input-green" maxlength="3" placeholder="GREEN" oninput="rgbaTest()">, 
+                                <input type="number" id="rgba-input-blue" maxlength="3" placeholder="BLUE" oninput="rgbaTest()">, 
+                                <input type="number" id="rgba-input-alpha" maxlength="3" placeholder="ALPHA" oninput="rgbaTest()"> ) }
+                        </div>
+
+                        <p class="test-text" id="rgba-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, totam.</p>
+                    </div>
+
                     <h3 id="hsl">HSL</h3>
 
                     <p>
@@ -171,6 +196,21 @@
 
                     <div class="codeblock">
                         section { <span class="css-rule">background-color</span>: hsla(0,0%,0%,0.5) } <span class="css-comment">/* znacznik section otrzyma pół przezroczyste czarne tło */</span>
+                    </div>
+
+                    <div class="test-wrapper">
+                        <h3>Spróbuj sam!</h3>
+                        <p>Wpisz własne wartości i zobacz wynik. Wygląd zmienia się w czasie rzeczywistym</p>
+
+                        <div class="codeblock">
+                            span { color: hsla(  
+                                <input type="number" id="hsla-input-hue" maxlength="3" placeholder="HUE" oninput="hslaTest()">, 
+                                <input type="number" id="hsla-input-saturation" maxlength="3" placeholder="SATURATION" oninput="hslaTest()">%, 
+                                <input type="number" id="hsla-input-lightness" maxlength="3" placeholder="LIGHTNESS" oninput="hslaTest()">%, 
+                                <input type="number" id="hsla-input-alpha" maxlength="3" placeholder="ALPHA" oninput="hslaTest()"> ) }
+                        </div>
+
+                        <p class="test-text" id="hsla-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, totam.</p>
                     </div>
 
                 </article>

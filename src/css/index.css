@@ -126,6 +126,13 @@ body {
     font-family: var(--fnt-main);
 }
 
+button {
+    background-color: white;
+    border: 1px solid var(--clr-lightblack);
+    border-radius: 10px;
+    padding: .2em .5em;
+}
+
 .header {
     display: flex;
     justify-content: space-between;

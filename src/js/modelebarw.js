@@ -3,11 +3,30 @@ const box1 = document.querySelector('.boxes-1');
 const box2 = document.querySelector('.boxes-2');
 const box3 = document.querySelector('.boxes-3');
 const box4 = document.querySelector('.boxes-4');
+
 // ZMIENNE DO GENEROWANIA LOSOWYCH KWADRATÓW
 const randomBoxContainer = document.querySelector('.random-boxes-container');
 const randomBoxAmount =  document.querySelector('#rnd-box-amount-input');
 const doIncludeTransparent = document.querySelector('#rnd-box-transparency-check');
 const randomBoxGenerateBtn = document.querySelector('.generate-random-boxes');
+
+// ZMIENNE DO TESTOWANIA MODELI
+// Hex
+const hexInput = document.querySelector('#hex-input');
+const hexText = document.querySelector('#hex-text');
+// Rgba
+const rgbaInputRed = document.querySelector('#rgba-input-red');
+const rgbaInputGreen = document.querySelector('#rgba-input-green');
+const rgbaInputBlue = document.querySelector('#rgba-input-blue');
+const rgbaInputAlpha = document.querySelector('#rgba-input-alpha');
+const rgbaText = document.querySelector('#rgba-text');
+// Hsla
+const hslaInputHue = document.querySelector('#hsla-input-hue');
+const hslaInputSaturation = document.querySelector('#hsla-input-saturation');
+const hslaInputLightness = document.querySelector('#hsla-input-lightness');
+const hslaInputAlpha = document.querySelector('#hsla-input-alpha');
+const hslaText = document.querySelector('#hsla-text');
+
 
 function generateRgbaBoxes(color, element) {
     let colorTemplate = '';
@@ -72,6 +91,18 @@ function generateRandomBoxes(amount, option, element) {
 randomBoxGenerateBtn.addEventListener("click", () => {
     generateRandomBoxes(randomBoxAmount.value, doIncludeTransparent, randomBoxContainer);
 })
+
+function hexTest() {
+    hexText.style.color = `#${hexInput.value}`;
+}
+
+function rgbaTest() {
+    rgbaText.style.color = `rgba( ${rgbaInputRed.value}, ${rgbaInputGreen.value}, ${rgbaInputBlue.value}, ${rgbaInputAlpha.value})`;
+}
+
+function hslaTest() {
+    hslaText.style.color = `hsla( ${hslaInputHue.value}, ${hslaInputSaturation.value}%, ${hslaInputLightness.value}%, ${hslaInputAlpha.value} )`;
+}
 
 
 

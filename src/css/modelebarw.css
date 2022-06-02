@@ -30,6 +30,44 @@
     text-align: center;
 }
 
+.test-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: .2rem .5rem;
+    border: 1px solid hsla(0, 0%, 0%, .2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.test-wrapper h3 {
+    margin: .5rem 0;
+}
+
+.test-wrapper input {
+    max-height: 1.5em;
+}
+
+.test-text {
+    font-weight: var(--wg-extrabold);
+    font-size: 1.3rem;
+}
+
+.test-wrapper button {
+    margin: .5rem 0;
+}
+
+.test-wrapper .codeblock {
+    margin-bottom: 1rem;
+    max-width: 50%;
+    align-self: center;
+}
+
+.inputs-wrapper button {
+    margin: 0;
+    height: 35.5px;
+}
+
 article h3 {
     margin: 2rem 0;
     font-weight: var(--wg-extrabold);
