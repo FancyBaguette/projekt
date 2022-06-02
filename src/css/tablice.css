@@ -53,6 +53,7 @@
 }
 
 @media (max-width:1025px) {
+
     .random-numbers-container,
     .sorted-numbers-container {
         flex-wrap: wrap;
@@ -61,4 +62,5 @@
     .rnd-number {
         width: 70px;
     }
+    
 }
