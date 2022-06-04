@@ -174,10 +174,19 @@ button {
     position: absolute;
     width: 4em;
     height: 4em;
-    background-color: var(--clr-pastelblue);
+    background-image: url(/src/img/niebieskiblob.svg);
     border-radius: 100%;
     z-index: -1;
 }
+
+/* .hero-text-background {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    z-index: -1;
+    position: absolute;
+    transform: translateY(-140px);
+} */
 
 .main-section {
     padding: 5rem 2rem;

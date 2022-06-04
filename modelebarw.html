@@ -88,10 +88,10 @@
                         <p>Wpisz własne wartości i zobacz wynik. Wygląd zmienia się w czasie rzeczywistym</p>
 
                         <div class="codeblock">
-                            span { color: #<input type="text" id="hex-input" maxlength="8" placeholder="ff000080" oninput="hexTest()"> }
+                            span { color: #<input type="text" id="hex-input" maxlength="8" value="ff0000"  placeholder="ff000080" oninput="hexTest()"> }
                         </div>
 
-                        <p class="test-text" id="hex-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, totam.</p>
+                        <p class="test-text" id="hex-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
 
                     <h3 id="rgb">RGB</h3>
@@ -148,13 +148,13 @@
 
                         <div class="codeblock">
                             span { color: rgba(  
-                                <input type="number" id="rgba-input-red" maxlength="3" placeholder="RED" oninput="rgbaTest()">, 
-                                <input type="number" id="rgba-input-green" maxlength="3" placeholder="GREEN" oninput="rgbaTest()">, 
-                                <input type="number" id="rgba-input-blue" maxlength="3" placeholder="BLUE" oninput="rgbaTest()">, 
-                                <input type="number" id="rgba-input-alpha" maxlength="3" placeholder="ALPHA" oninput="rgbaTest()"> ) }
+                                <input type="number" id="rgba-input-red" maxlength="3" placeholder="RED" value="0" oninput="rgbaTest()">, 
+                                <input type="number" id="rgba-input-green" maxlength="3" placeholder="GREEN" value="0" oninput="rgbaTest()">, 
+                                <input type="number" id="rgba-input-blue" maxlength="3" placeholder="BLUE" value="255" oninput="rgbaTest()">, 
+                                <input type="number" id="rgba-input-alpha" maxlength="3" placeholder="ALPHA" value="1" oninput="rgbaTest()"> ) }
                         </div>
 
-                        <p class="test-text" id="rgba-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, totam.</p>
+                        <p class="test-text" id="rgba-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
 
                     <h3 id="hsl">HSL</h3>
@@ -204,13 +204,13 @@
 
                         <div class="codeblock">
                             span { color: hsla(  
-                                <input type="number" id="hsla-input-hue" maxlength="3" placeholder="HUE" oninput="hslaTest()">, 
-                                <input type="number" id="hsla-input-saturation" maxlength="3" placeholder="SATURATION" oninput="hslaTest()">%, 
-                                <input type="number" id="hsla-input-lightness" maxlength="3" placeholder="LIGHTNESS" oninput="hslaTest()">%, 
-                                <input type="number" id="hsla-input-alpha" maxlength="3" placeholder="ALPHA" oninput="hslaTest()"> ) }
+                                <input type="number" id="hsla-input-hue" maxlength="3" placeholder="HUE" value="140" oninput="hslaTest()">, 
+                                <input type="number" id="hsla-input-saturation" maxlength="3" placeholder="SATURATION" value="100" oninput="hslaTest()">%, 
+                                <input type="number" id="hsla-input-lightness" maxlength="3" placeholder="LIGHTNESS" value="20" oninput="hslaTest()">%, 
+                                <input type="number" id="hsla-input-alpha" maxlength="3" placeholder="ALPHA" value="1" oninput="hslaTest()"> ) }
                         </div>
 
-                        <p class="test-text" id="hsla-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, totam.</p>
+                        <p class="test-text" id="hsla-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
 
                 </article>

@@ -103,5 +103,9 @@ a {
         padding: 5rem 1rem;
     }
 
+    .codepen-wrapper {
+        max-width: none;
+    }
+
    }
 

@@ -55,20 +55,25 @@
 
         <section class="main-section" id="section-2-daty">
             <h1>Oblicz ilość dni między datą a wybranym świętem</h1>
-            <span>Tutaj z jakiegoś powodu jak wybierze się te samą datę to nie działa jak należy :(</span>
+            <!-- Tutaj z jakiegoś powodu jak wybierze się te samą datę to nie działa jak należy -->
 
             <div class="content-wrapper">
                 <label for="dateHoliday-input">Wprowadź wybraną datę</label>
                 <input type="date" name="dateHoliday-input" id="dateHoliday-input">
                 <label for="selectedHoliday-input">Wybierz święto</label>
                 <select name="selectedHoliday-input" id="selectedHoliday-input">
-                    <option value="12/24/2022">Boże narodzenie 🎄</option>
-                    <option value="12/31/2022">Sylwester 🎆</option>
-                    <option value="04/09/2023">Wielkanoc (2023) 🥚</option>
-                    <option value="06/01/2022">Dzień dziecka 👶</option>
-                    <option value="05/01/2023">Święto pracy (2023) 👷‍♂️</option>
-                    <option value="10/11/2022">Dzień niepodległości ⬜🟥</option>
-                    <option value="03/18/2023">Moje 18 urodziny 😎</option>
+                    <optgroup label="2022">
+                        <option value="12/24/2022">Boże narodzenie 🎄</option>
+                        <option value="12/31/2022">Sylwester 🎆</option>
+                        <option value="06/01/2022">Dzień dziecka 👶</option>
+                        <option value="10/11/2022">Dzień niepodległości ⬜🟥</option>
+                    </optgroup>
+    
+                    <optgroup label="2023">
+                        <option value="04/09/2023">Wielkanoc 🥚</option>
+                        <option value="05/01/2023">Święto pracy 👷‍♂️</option>
+                        <option value="03/18/2023">Moje 18 urodziny 😎</option>
+                    </optgroup>
                 </select>
 
                 <button class="calculate-btn" id="calculate-btn-2">Oblicz</button>

@@ -104,6 +104,10 @@ function hslaTest() {
     hslaText.style.color = `hsla( ${hslaInputHue.value}, ${hslaInputSaturation.value}%, ${hslaInputLightness.value}%, ${hslaInputAlpha.value} )`;
 }
 
+hexTest();
+rgbaTest();
+hslaTest();
+
 
 
 
