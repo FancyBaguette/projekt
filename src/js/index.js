@@ -4,7 +4,6 @@ function renderCurrentDate(element) {
     let date = new Date();
     let dayNumber = date.getDate()
     let dayName = date.getDay();
-    console.log(dayName)
     dayName = weekDays[dayName-1];
     let monthName = date.getMonth();
     monthName = months[monthName-1];
